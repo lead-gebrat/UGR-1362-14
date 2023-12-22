@@ -5,190 +5,191 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Resume</title>
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="dist/output.css">
 
   </head>
-  <body>
-    <header>
-      <h1>Lidya Gebretsadik</h1>
+    <body class="font-serif m-0 flex flex-col gap-10 justify-between ">
+      <header class="bg-gray-950 text-white grid grid-cols-2 justify-between items-center p-5">
+        <h1 class="text-xl font-semibold text-white">Lidya Gebretsadik</h1>
+        <div class="px-4 cursor-pointer xl:hidden relative w-full flex items-center" id="burger">
+          <svg class="w-10 h-10 absolute right-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon">
+          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+        </svg>
+        </div>
+        <nav class="block xl:grid xl:grid-cols-5 gap-5" id="nav-links">
+          <a class="p-3 block hover:bg-gray-400 hover:text-black xl:text-center" href="Home.html">Home</a>
+          <a class="p-3 block hover:bg-gray-400 hover:text-black xl:text-center" href="Resume.html">Resume</a>
+          <a class="p-3 block hover:bg-gray-400 hover:text-black xl:text-center" href="Hobbies.html">Hobbies</a>
+          <a class="p-3 block hover:bg-gray-400 hover:text-black xl:text-center" href="Books.html">Books</a>
+          <a class="p-3 block hover:bg-gray-400 hover:text-black xl:text-center" href="Contact.html">Contact</a>
+        </nav>
+  
+      </header>
 
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
-
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
+    <section class="m-5 grid gap-3">
+      <h2 class="text-2xl font-semibold">Education</h2>
+      <div class="shadow-lg p-10 border-r-2 border-l-2 border-purple-300  bg-purple-50 flex justify-between">
+        <p class="font-semibold">Addis Ababa Institute of Technology - Software Engineering</p>
+        <p class="font-semibold">2021 - Present</p> 
       </div>
-      
-    </header>
-
-    <section class="education">
-      <h2>Education</h2>
-      <div class="education-container">
-        <p>Addis Ababa Institute of Technology - Software Engineering</p>
-        <p>2021 - 2023</p> 
+      <div class="shadow-lg p-10 border-r-2 border-l-2 border-purple-300 bg-purple-50 flex justify-between">
+        <p class="font-semibold"><abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMU-KM-SSC</abbr> - High School</p>
+        <p class="font-semibold">2018 - 2021</p> 
+      </div>
+      <div class="shadow-lg p-10 border-r-2 border-l-2 border-purple-300 bg-purple-50  flex justify-between">
+        <p class="font-semibold">Safari Academy - Middle School</p>
+        <p class="font-semibold">2015 - 2018</p> 
       </div>
     </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <p>Web development</p>
+    <section class="m-5 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <h2 class="text-2xl font-semibold md:col-span-2 lg:col-span-3">Skills</h2>
+
+      <div class="shadow-lg border-l-2 border-purple-300  p-10">
+        <p class="font-semibold mb-2">Web development</p>
         <table>
           <tr>
-            <td>HTML</td>
+            <td >HTML</td>
             <td><label for="html">80%</label>
               <progress id="html" value="80" max="100">80%</progress></td>
           </tr>
 
           <tr>
-            <td>CSS</td>
-            <td><label for="css">67%</label>
+            <td >CSS</td>
+            <td ><label for="css">67%</label>
               <progress id="css" value="67" max="100"> 67% </progress></td>
           </tr>
 
           <tr>
-            <td>JavaScript</td>
-            <td><label for="javascript">48%</label>
+            <td >JavaScript</td>
+            <td ><label for="javascript">48%</label>
               <progress id="javascript" value="48" max="100">48% </progress></td>
           </tr>
         </table>
       </div>
 
-      <div class="skills">
-        <p>Courses</p>
-        <ul>
+      <div class="shadow-lg border-l-2 border-purple-300  p-10">
+        <p class="font-semibold">Courses</p>
+        <ul class="list-disc">
           <li>Networking Essentials - Cisco Academy</li>
           <li>Data Structures and Algorithm - <abbr title="Addis Ababa Institute of Technology">AAiT</abbr></li>
           <li>Introduction to Packet Tracer - Cisco Academy</li>
           <li>Introduction to Front-End Development - Meta</li>
         </ul>
       </div>
-      <div class="skills">
-        <p>Languages</p>
-        <ul>
+
+      <div class="shadow-lg border-l-2 border-purple-300  p-10">
+        <p class="font-semibold">Languages</p>
+        <ul class="list-disc">
           <li>Amharic - Native</li>
           <li>English - Proficient</li>
           <li>Tigrigna - Proficient</li>
           <li>Korean - Beginner</li>
         </ul>
       </div>
+
     </section>
 
-    <section>
-      <h2>Certificates</h2>
-      <div class="certificates-container">
-        <div class="certificate">
-          <p>Networking Essentials certificate - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
-            <img src="/images/essentials.png" alt="essentials-certificate">
+    <section class="m-5">
+      <h2 class="text-2xl font-semibold">Certificates</h2>
+      <div class="shadow-lg border-t-2 border-b-2 border-purple-300 grid lg:grid-cols-2 gap-5 p-5">
+
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Networking Essentials certificate - Cisco Academy</p>
+          <div class="certificates__con__file__pdf">
+            <a class="text-purple-800  underline" href="images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
+            <img class="w-28 h-20" src="images/essentials.png" alt="essentials-certificate">
           </div>
            
         </div>
 
-        <div class="certificate">
-          <p>Introduction to Packet Tracer - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
-            <img src="/images/packet.png" alt="packet-certificate">
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Introduction to Packet Tracer - Cisco Academy</p>
+          <div class="certificates__con__file__pdf">
+            <a class="text-purple-800  underline" href="images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
+            <img class="w-28 h-20" src="images/packet.png" alt="packet-certificate">
           </div>
 
         </div>
 
-        <div class="certificate">
-          <p>Introduction to Front-End Development - Meta</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
-          <img src="/images/meta.png" alt="meta-certificate"> 
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Introduction to Front-End Development - Meta</p>
+          <div class="certificates__con__file__pdf">
+            <a class="text-purple-800  underline" href="images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
+          <img class="w-28 h-20" src="images/meta.png" alt="meta-certificate"> 
           </div>
           
         </div>
 
-        <div class="certificate">
-          <p>Internship - Yerer Hospital </p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
-            <img src="/images/yerer.png" alt="yerer-certificate">
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Internship - Yerer Hospital </p>
+          <div class="certificates__con__file__pdf">
+            <a class="text-purple-800  underline" href="images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
+            <img  class="w-28 h-20" src="images/yerer.png" alt="yerer-certificate">
           </div>
            
         </div>
 
-        <div class="certificate">
-          <p>Book Club - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
-            <img src="/images/book.png" alt="book-club-certificate">
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Book Club - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
+          <div class="certificates__con__file__pdf">
+            <a class="text-purple-800  underline" href="images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
+            <img class="w-28 h-20" src="images/book.png" alt="book-club-certificate">
           </div>
           
         </div>
-        
-        <p>Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-        <div class="pdf">
-          <a class="certificate-download" href="/images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
-          <img src="/images/fmp.png" alt="fmp-club-certificate">
+
+        <div class="border-solid border-2 border-gray-300 flex justify-between p-2">
+          <p class="font-semibold">Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
+        <div class="certificates__con__file__pdf">
+          <a class="text-purple-800  underline" href="images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
+          <img class="w-28 h-20" src="images/fmp.png" alt="fmp-club-certificate">
         </div>
-         
+        </div> 
+
       </div>
     </section>
 
-    <footer>
+    <footer class="bg-gray-950 text-white grid grid-cols-5 p-10">
 
-      <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+      <P class="footer__copyright">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
 
-      <nav class="foot-nav">
+      <nav class="text-center grid">
         <p>Go to</p>
-        <a href="Home.html">Home</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Books.html">Books</a>
-        <a href="Contact.html">Contact</a>
+        <a class="text-purple-300 underline"href="Home.html">Home</a>
+        <a class="text-purple-300 underline"href="Resume.html">Resume</a>
+        <a class="text-purple-300 underline"href="Hobbies.html">Hobbies</a>
+        <a class="text-purple-300 underline"href="Books.html">Books</a>
+        <a class="text-purple-300 underline"href="Contact.html">Contact</a>
       </nav>
 
-      <div class="write">
+      <div class="text-center">
         <p>Write</p>
-        <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+        <a class="text-purple-300 break-all underline"href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
       </div>
       
-      <div class="follow">
+      <div class="text-center">
         <p>Follow</p>
-        <div>
-          <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-          
+        <div >
+          <a class="text-purple-300" href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a class="text-purple-300" href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
       </div>
 
-      <div class="details">
+      <div class="text-center">
         <p>Details</p>
-        <address>Addis Ababa, Ethiopia</address>
-        <p>+251941139289</p>
+        <address class="text-purple-300">Addis Ababa, Ethiopia</address>
+        <p  class="text-purple-300">+251941139289</p>
       </div>
 
       
     </footer>
 
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js"></script>
+
+    
   </body>
 </html>
