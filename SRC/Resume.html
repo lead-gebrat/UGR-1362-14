@@ -5,190 +5,222 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Resume</title>
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  </head>
-  <body>
-    <header>
-      <h1>Lidya Gebretsadik</h1>
-
-      <nav class="head-nav">
-        <a class="nav-link" href="Home.html">Home</a>
-        <a class="nav-link" href="Resume.html">Resume</a>
-        <a class="nav-link" href="Hobbies.html">Hobbies</a>
-        <a class="nav-link" href="Books.html">Books</a>
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </nav>
-
-      <div class="menu-bar-container">
-        <label class="hamburger-menu">
-          <input type="checkbox">
-        </label>
-        <aside class="sidebar">
-          <nav>
-            <a  href="Home.html">Home</a>
-            <a  href="Resume.html">Resume</a>
-            <a  href="Hobbies.html">Hobbies</a>
-            <a  href="Books.html">Books</a>
-            <a  href="Contact.html">Contact</a>
-          </nav>
-        </aside>
-      </div>
+      <link rel="stylesheet" href="dist/css/main.css">
       
-    </header>
 
-    <section class="education">
-      <h2>Education</h2>
-      <div class="education-container">
-        <p>Addis Ababa Institute of Technology - Software Engineering</p>
-        <p>2021 - 2023</p> 
-      </div>
-    </section>
+     
+    </head>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <p>Web development</p>
-        <table>
-          <tr>
-            <td>HTML</td>
-            <td><label for="html">80%</label>
-              <progress id="html" value="80" max="100">80%</progress></td>
-          </tr>
 
-          <tr>
-            <td>CSS</td>
-            <td><label for="css">67%</label>
-              <progress id="css" value="67" max="100"> 67% </progress></td>
-          </tr>
-
-          <tr>
-            <td>JavaScript</td>
-            <td><label for="javascript">48%</label>
-              <progress id="javascript" value="48" max="100">48% </progress></td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="skills">
-        <p>Courses</p>
-        <ul>
-          <li>Networking Essentials - Cisco Academy</li>
-          <li>Data Structures and Algorithm - <abbr title="Addis Ababa Institute of Technology">AAiT</abbr></li>
-          <li>Introduction to Packet Tracer - Cisco Academy</li>
-          <li>Introduction to Front-End Development - Meta</li>
-        </ul>
-      </div>
-      <div class="skills">
-        <p>Languages</p>
-        <ul>
-          <li>Amharic - Native</li>
-          <li>English - Proficient</li>
-          <li>Tigrigna - Proficient</li>
-          <li>Korean - Beginner</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Certificates</h2>
-      <div class="certificates-container">
-        <div class="certificate">
-          <p>Networking Essentials certificate - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
-            <img src="/images/essentials.png" alt="essentials-certificate">
-          </div>
-           
-        </div>
-
-        <div class="certificate">
-          <p>Introduction to Packet Tracer - Cisco Academy</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
-            <img src="/images/packet.png" alt="packet-certificate">
-          </div>
-
-        </div>
-
-        <div class="certificate">
-          <p>Introduction to Front-End Development - Meta</p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
-          <img src="/images/meta.png" alt="meta-certificate"> 
-          </div>
+  <body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <div class="container-fluid">
+        <h2 class="navbar-brand fw-bold text-light">Lidya Gebretsadik</h2>
+        <button class="navbar-toggler ms-6 align-self-end bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto w-100 justify-content-lg-end mb-2 mb-lg-0 row-lg">
+            <li class="nav-item col-xl-1">
+              <a class="nav-link text-light" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item col-xl-1">
+              <a class="nav-link text-light" href="Resume.html">Resume</a>
+            </li>
+            <li class="nav-item col-xl-1">
+              <a class="nav-link text-light" href="Hobbies.html" >
+                Hobbies
+              </a>
+            </li>
+            <li class="nav-item col-xl-1">
+              <a class="nav-link text-light" href="Books.html">Books</a>
+            </li>
+            <li class="nav-item col-xl-1">
+              <a class="nav-link text-light" href="Contact.html">Contact</a>
+            </li>
+          </ul>
           
-        </div>
-
-        <div class="certificate">
-          <p>Internship - Yerer Hospital </p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
-            <img src="/images/yerer.png" alt="yerer-certificate">
-          </div>
-           
-        </div>
-
-        <div class="certificate">
-          <p>Book Club - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-          <div class="pdf">
-            <a class="certificate-download" href="/images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
-            <img src="/images/book.png" alt="book-club-certificate">
-          </div>
-          
+       
         </div>
         
-        <p>Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
-        <div class="pdf">
-          <a class="certificate-download" href="/images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
-          <img src="/images/fmp.png" alt="fmp-club-certificate">
-        </div>
-         
+      </div>
+    </nav>
+
+    <section class="container my-5">
+      <h2 class="fw-semibold">Education</h2>
+      <div class="shadow p-3 row border-2 border-start border-end border-info">
+        <p class="fw-semibold col-8">Addis Ababa Institute of Technology - Software Engineering</p>
+        <p class="fw-semibold col-4">2021 - Present</p> 
+      </div>
+      <div class="shadow my-3 p-3 row border-2 border-start border-end border-info">
+        <p class="fw-semibold col-8"><abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMU-KM-SSC</abbr> - High School</p>
+        <p class="fw-semibold col-4">2018 - 2021</p> 
+      </div>
+      <div class="shadow p-3 row border-2 border-start border-end border-info">
+        <p class="fw-semibold col-8">Safari Academy - Middle School</p>
+        <p class="fw-bold col-4">2015 - 2018</p> 
       </div>
     </section>
 
-    <footer>
-
-      <P>&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
-
-      <nav class="foot-nav">
-        <p>Go to</p>
-        <a href="Home.html">Home</a>
-        <a href="Resume.html">Resume</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Books.html">Books</a>
-        <a href="Contact.html">Contact</a>
-      </nav>
-
-      <div class="write">
-        <p>Write</p>
-        <a href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+    <section class="container my-5">
+      <h2 class="fw-semibold">Skills</h2>
+      <div class="row justify-content-center ">
+        <div class="col-lg-3 col-12 col-md-5 my-2 border-2 border-start border-info shadow">
+          <p class="fw-semibold">Web development</p>
+          <table>
+            <tr>
+              <td >HTML</td>
+              <td><label for="html">80%</label>
+                <progress id="html" value="80" max="100">80%</progress></td>
+            </tr>
+  
+            <tr>
+              <td >CSS</td>
+              <td ><label for="css">67%</label>
+                <progress id="css" value="67" max="100"> 67% </progress></td>
+            </tr>
+  
+            <tr>
+              <td >JavaScript</td>
+              <td ><label for="javascript">48%</label>
+                <progress id="javascript" value="48" max="100">48% </progress></td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="col-lg-3 col-12 col-md-5 mx-3 my-2 border-2 border-start border-info shadow">
+          <p class="fw-semibold">Courses</p>
+          <ul >
+            <li>Networking Essentials - Cisco Academy</li>
+            <li>Data Structures and Algorithm - <abbr title="Addis Ababa Institute of Technology">AAiT</abbr></li>
+            <li>Introduction to Packet Tracer - Cisco Academy</li>
+            <li>Introduction to Front-End Development - Meta</li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-12 col-md-5 my-2 border-2 border-start border-info shadow">
+          <p class="fw-semibold">Languages</p>
+          <ul >
+            <li>Amharic - Native</li>
+            <li>English - Proficient</li>
+            <li>Tigrigna - Proficient</li>
+            <li>Korean - Beginner</li>
+          </ul>
+        </div>
       </div>
       
-      <div class="follow">
-        <p>Follow</p>
-        <div>
-          <a href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+    </section>
+
+    <section class="container my-5">
+      <h2 class="fw-semibold">Certificates</h2>
+      <div class="shadow border-2 border-top border-bottom border-info shadow container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+            <p class="col-8 fw-semibold">Networking Essentials certificate - Cisco Academy</p>
+            <div class="col-4">
+              <a  href="images/LidyaGebretsadik-Fundamentals-of-certificate.pdf" download="Lidya-Gebretsadik-Networking-Essentials">Download PDF</a>
+              <img class="h-50 w-50" src="images/essentials.png" alt="essentials-certificate">
+            </div>
+             
+          </div>
+  
+          <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+            <p class="col-8 fw-semibold">Introduction to Packet Tracer - Cisco Academy</p>
+            <div class="col-4">
+              <a  href="images/LidyaGebretsadik-Lab-Fundamental-certificate.pdf" download="Lidya-Gebretsadik-Packet-tracer">Download PDF</a> 
+              <img class="h-50 w-50" src="images/packet.png" alt="packet-certificate">
+            </div>
+  
+          </div>
+          </div>
+   
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+              <p class="col-8 fw-semibold">Introduction to Front-End Development - Meta</p>
+              <div class="col-4">
+                <a  href="images/Coursera-front-end-certificate.pdf" download="Lidya-Gebretsadik-Front-End">Download PDF</a>
+              <img class="h-50 w-50" src="images/meta.png" alt="meta-certificate"> 
+              </div>
+              
+            </div>
+    
+            <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+              <p class="col-8 fw-semibold">Internship - Yerer Hospital </p>
+              <div class="col-4">
+                <a  href="images/yerer-Hospital-certification.pdf" download="Lidya-Gebretsadik-yerer">Download PDF</a>
+                <img  class="h-50 w-50" src="images/yerer.png" alt="yerer-certificate">
+              </div>
+               
+            </div>
+          </div>
           
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+              <p class="col-8 fw-semibold">Book Club - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
+              <div class="col-4">
+                <a  href="images/Book-Club-Certificate.pdf" download="Lidya-Gebretsadik-book-club">Download PDF</a> 
+                <img class="h-50 w-50" src="images/book.png" alt="book-club-certificate">
+              </div>
+              
+            </div>
+    
+            <div class="col-12 col-lg-5 border border-1 border-gray mx-3 my-2 row p-2">
+              <p class="col-8 fw-bold">Future Medical Professionals - <abbr title="Kotebe Metropolitian University Kedamawi Menelik Science Shared Campus">KMUKMSSC</abbr></p>
+            <div class="col-4">
+              <a  href="images/FMP-Club-Certificate.pdf" download="Lidya-Gebretsadik-FMP-club">Download PDF</a>
+              <img class="h-50 w-50" src="images/fmp.png" alt="fmp-club-certificate">
+            </div>
+            </div> 
+          </div>
+          
+  
+        </div>
+      </div>
+      
+    </section>
+
+    <footer class="row bg-black text-white mt-5">
+
+      <P class="col">&copy;Copyright 2023 by Lidya Gebretsadik |All rights  Reserved</P>
+
+      <nav class="col" >
+        <p>Go to</p>
+        <a class="d-block" href="Home.html">Home</a>
+        <a class="d-block" href="Resume.html">Resume</a>
+        <a class="d-block" href="Hobbies.html">Hobbies</a>
+        <a class="d-block" href="Books.html">Books</a>
+        <a class="d-block" href="Contact.html">Contact</a>
+      </nav>
+
+      <div class="col">
+        <p>Write</p>
+        <a class="text-break" href="mailto:lidyagebretsadikw@gmail.com">lidyagebretsadikw@gmail.com</a>
+      </div>
+      
+      <div class="col">
+        <p>Follow</p>
+        <div >
+          <a  href="https://www.instagram.com/leadgebrat/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a  href="https://www.linkedin.com/in/lidya-gebretsadik-12006528b/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
       </div>
 
-      <div class="details">
+      <div class="col">
         <p>Details</p>
-        <address>Addis Ababa, Ethiopia</address>
-        <p>+251941139289</p>
+        <address >Addis Ababa, Ethiopia</address>
+        <p  >+251941139289</p>
       </div>
 
       
     </footer>
 
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
